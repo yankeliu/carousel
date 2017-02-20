@@ -1,2 +1,6 @@
-# carousel
-carousel
+# 轮播
+- 实现自动轮播
+- 点击左右按钮跳到上一个或下一个
+- 点击下面序号滚动到对应图片
+##效果如下：
+![](http://i.imgur.com/VvZ3dn6.png)
