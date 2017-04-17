@@ -92,7 +92,8 @@ function lunbo(){
         elem.style.left=0+'px';
     }
     var newxpos=parseInt(elem.style.left);
-	if (newxpos % -500 !== 0) {
+	if (newxpos % -500 !== 0) { 
+	//判断moveElement函数是否将目标元素移动到目标位置，否则完成移动，这个问题是由浏览器切换当前窗口所导致
       var targetLeft = Math.ceil(newxpos / -500) * (-500);
       moveElement('ul', targetLeft, 0 ,20);
       return;
