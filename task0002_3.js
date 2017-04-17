@@ -92,6 +92,11 @@ function lunbo(){
         elem.style.left=0+'px';
     }
     var newxpos=parseInt(elem.style.left);
+	if (newxpos % -500 !== 0) {
+      var targetLeft = Math.ceil(newxpos / -500) * (-500);
+      moveElement('ul', targetLeft, 0 ,20);
+      return;
+    }
     var xd=newxpos-500;
     moveElement('ul', xd ,0,20);
     var active=document.getElementsByClassName("active");
