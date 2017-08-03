@@ -73,13 +73,13 @@ function addClickNum(){
                 }
             }
             this.className='active';  
-            lunboagain=setInterval('lunbo()',3000);
+            lunboagain=setInterval(lunbo,3000);
         };
     }
     return;
 }
 
-addLoadEvent(addClickNum());
+addLoadEvent(addClickNum);
 
 //轮播
 function lunbo(){
@@ -110,7 +110,7 @@ function lunbo(){
     document.getElementById("btn").getElementsByTagName('li')[lith].className='active';       
         
 }
-var lunboagain=setInterval('lunbo()',3000);
+var lunboagain=setInterval(lunbo,3000);
 
 
 
@@ -135,11 +135,11 @@ function leftbod(){
                 }
             }
         document.getElementById("btn").getElementsByTagName('li')[nth-2].className='active';    
-        lunboagain=setInterval('lunbo()',3000);
+        lunboagain=setInterval(lunbo,3000);
     }
 }
 
-addLoadEvent(leftbod());
+addLoadEvent(leftbod);
 
 //向右滑动
 function rightbod(){
@@ -162,11 +162,11 @@ function rightbod(){
                 }
             }
         document.getElementById("btn").getElementsByTagName('li')[nth].className='active';    
-        lunboagain=setInterval('lunbo()',3000);
+        lunboagain=setInterval(lunbo,3000);
     }
 }
 
-addLoadEvent(rightbod());
+addLoadEvent(rightbod);
 
 
 
